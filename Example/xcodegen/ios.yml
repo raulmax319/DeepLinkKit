@@ -1,0 +1,37 @@
+targets:
+  DeepLinkKit_Example:
+    type: application
+    platform: iOS
+
+    sources:
+      - Sources/DeepLinkKit
+
+    settings:
+      INFOPLIST_FILE: Sources/DeepLinkKit/Supporting Files/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)
+
+    prebuildScripts:
+      - name: Integrate Swiftlint
+        script: sh ./scripts/swiftlint.sh
+        showEnvVars: YES
+        basedOnDependencyAnalysis: NO
+
+  DeepLinkKit_Tests:
+    type: bundle.unit-test
+    platform: iOS
+
+    sources:
+      - Sources/Tests
+
+    settings:
+      INFOPLIST_FILE: Sources/Tests/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)
+
+    dependencies:
+      - target: DeepLinkKit_Example
+
+    prebuildScripts:
+      - name: Integrate Swiftlint
+        script: sh ./scripts/swiftlint.sh
+        showEnvVars: YES
+        basedOnDependencyAnalysis: NO

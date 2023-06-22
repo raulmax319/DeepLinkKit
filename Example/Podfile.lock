@@ -1,0 +1,25 @@
+PODS:
+  - DeepLinkKit/Debug (0.1.0)
+  - DeepLinkKit/Debug/Tests (0.1.0)
+  - SwiftLint (0.50.3)
+
+DEPENDENCIES:
+  - DeepLinkKit/Debug (from `../`)
+  - DeepLinkKit/Debug/Tests (from `../`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  DeepLinkKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DeepLinkKit: a189295f6ef161eaeecb22412cdb402660d2e3c4
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+
+PODFILE CHECKSUM: 9f94f5429a02b65f353913ec3f68250ea3f0dd2f
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,16 @@
+name: DeepLinkKit
+
+options:
+  minimumXcodeGenVersion: 2.29
+  groupSortPosition: top
+  generateEmptyDirectories: YES
+  deploymentTarget:
+    iOS: 13.0
+  preGenCommand: sh ./scripts/pre_gen.sh
+  postGenCommand: sh ./scripts/post_gen.sh
+
+include:
+  - path: xcodegen/ios.yml
+    relativePaths: NO
+  - path: xcodegen/schemes.yml
+    relativePaths: NO

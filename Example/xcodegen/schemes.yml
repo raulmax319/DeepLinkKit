@@ -1,0 +1,12 @@
+schemes:
+  DeepLinkKit:
+    build:
+      targets:
+        DeepLinkKit_Example: all
+        DeepLinkKit_Tests: [run, test]
+    test:
+      gatherCoverageData: YES
+      coverageTargets:
+        - DeepLinkKit_Example
+      targets:
+        - DeepLinkKit_Tests
