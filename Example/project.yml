@@ -17,5 +17,3 @@ options:
 include:
   - path: xcodegen/ios.yml
     relativePaths: NO
-  - path: xcodegen/schemes.yml
-    relativePaths: NO
