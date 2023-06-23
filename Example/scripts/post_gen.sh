@@ -13,5 +13,3 @@ if [ -f "Podfile" ]; then
     echo "🚀 Installing Pods"
     pod install
 fi
-
-sh $(pwd)/scripts/replace_schemes.sh
