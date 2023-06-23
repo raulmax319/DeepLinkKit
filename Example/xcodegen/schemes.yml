@@ -1,5 +1,12 @@
 schemes:
   DeepLinkKit:
+    shared: YES
+    buildAction: build
+    testAction: test
+    runAction: run
+    archiveAction: archive
+    profileAction: profile
+    analyzeAction: analyze
     build:
       targets:
         DeepLinkKit_Example: all

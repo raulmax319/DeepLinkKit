@@ -4,7 +4,14 @@ targets:
     platform: iOS
 
     sources:
-      - Sources/DeepLinkKit
+      - path: Sources/DeepLinkKit
+        name: Example for DeepLinkKit
+      - path: ../
+        name: Podspec Metadata
+        includes:
+          - DeepLinkKit.podspec
+          - README.md
+          - LICENSE
 
     settings:
       INFOPLIST_FILE: Sources/DeepLinkKit/Supporting Files/Info.plist
