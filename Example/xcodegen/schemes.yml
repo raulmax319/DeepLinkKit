@@ -1,3 +1,6 @@
+projectReferences:
+  Pods:
+    path: Pods/Pods.xcodeproj
 schemes:
   DeepLinkKit:
     shared: YES
@@ -14,6 +17,7 @@ schemes:
     test:
       gatherCoverageData: YES
       coverageTargets:
-        - DeepLinkKit_Example
+        - Pods/DeepLinkKit
       targets:
         - DeepLinkKit_Tests
+        - Pods/DeepLinkKit-Unit-Debug-Tests
